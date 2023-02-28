@@ -1,0 +1,49 @@
+\documentclass{ctexart}
+\usepackage{note}
+\usepackage{ctexsize}
+\geometry{margin={0.3cm,0.3cm}, landscape}
+\usepackage[fontsize=5bp]{fontsize}
+\usepackage{multicol}
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=1.75em,labelindent=0pt,labelsep=0pt}
+\ctexset{
+    paragraph/beforeskip=0pt,
+    subparagraph/beforeskip=0pt,
+    section/beforeskip=0pt,
+    section/afterskip=0pt,
+}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\title{统计学习小抄}
+\author{朱睿杰}
+
+%\usepackage{arevtext,arevmath}
+
+\begin{document}
+
+\setlength{\columnsep}{0.2cm}
+\setlength\columnseprule{.4pt}
+
+\begin{multicols*}{5}
+\sffamily
+
+\linespread{1.0}
+\setlength{\normalbaselineskip}{6bp}
+\setlength{\baselineskip}{6bp}
+\setlength{\lineskiplimit}{0pt}
+\setlength{\lineskip}{0pt}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlength{\abovedisplayskip}{0pt}
+\setlength{\belowdisplayskip}{0pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{0pt}
+\ziju{-0.09}
+
+\newenvironment{sequation}{\begin{equation}\small}{\end{equation}}
+
+
+\input{sl.tex}
+
+\end{multicols*}
+\end{document}

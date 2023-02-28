@@ -1,0 +1,55 @@
+% math
+\defaultfontfeatures{Mapping=tex-text} % to support TeX conventions like ``---''
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{bm} % bold math
+\usepackage{xspace}
+\usepackage{extarrows}
+\usepackage{multirow}  % tabular
+\usepackage{nicefrac}  % 分数更好看
+\usepackage{xunicode} % Unicode support for LaTeX character names (accents, European chars, etc)
+\usepackage{booktabs} % professional-quality tables
+\usepackage{xltxtra} % Extra customizations for XeLaTeX\usepackage{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\usepackage[margin={1in,1.25in}]{geometry} % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx} % to support the \includegraphics command and options
+\usepackage{hyperref} % to support the \href command
+\usepackage{minted} % to support the code showing
+\usepackage{enumitem} % enumerate
+\usepackage{capt-of} % to support the \captionof command
+% support caption commands
+\usepackage{caption}
+\usepackage{subcaption}
+% bibliography
+\usepackage[numbers,super,square]{natbib}
+\bibliographystyle{unsrtnat}
+
+% ploting
+\usepackage{tikz}
+
+% 中文句号改为句点
+\catcode`\。=\active
+\newcommand{。}{\ifmmode\text{．}\else ．\fi}
+% 中文强调用着重号，总之不用楷体……
+\usepackage{xeCJKfntef}
+\renewcommand{\emph}[1]{\CJKunderdot[textformat=\itshape]{#1}}
+% 节标题左对齐
+\ctexset{
+  section/format += \raggedright
+}
+% pdf title & author
+\makeatletter
+\AtBeginDocument{
+  \hypersetup{
+    pdftitle = {\@title},
+    pdfauthor = {\@author}
+  }
+}
+\makeatother
+% algorithm
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[spaceRequire=false]{algpseudocodex}
+\floatname{algorithm}{算法}
+% definition
+\newtheorem{definition}{定义}
