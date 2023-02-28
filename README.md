@@ -13,4 +13,5 @@ latexmk -xelatex -8bit -shell-escape outline
 ```
 生成文档
 
-
+## 预览
+![avatar](preview.png)
